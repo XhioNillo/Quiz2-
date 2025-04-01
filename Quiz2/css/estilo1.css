@@ -1,0 +1,181 @@
+.divPadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1100px;
+  }
+  
+  .divHijo {
+    display: flex;
+    width: 65%;
+    height: 500px;
+    background-color: black;
+    justify-content: space-between;
+  }
+  
+  .divHijo2 {
+    width: 65%;
+    height: 490px;
+    background-color: rgb(176, 6, 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .boton {
+    background-color: red;
+    width: 200px; 
+    height: 60px;
+    border: none; 
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .divHijo_1 {
+    width: 50%;
+    height: 100%;
+    padding: 50px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /
+  }
+  
+  .divHijo_1 h1, .divHijo_1 h2 {
+    color: red;
+    font-size: 48px;
+    margin: 0; 
+    line-height: 1.1;
+    font-weight: bold;
+  }
+  
+  .divHijo_1 h1 {
+    margin-bottom: 5px; 
+  }
+  
+  .divHijo_1 h2 {
+    margin-bottom: 5px;
+  }
+  
+  .divHijo_1 h2:last-of-type {
+    margin-bottom: 20px; 
+  } 
+
+  
+  .divHijo_1 p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .divHijo_2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divHijo_2 img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+  }
+
+  .divHijo2 h2 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .subtitulo {
+    color: white;
+    font-size: 18px; 
+    max-width: 80%; 
+    margin: 20px auto; 
+    line-height: 1.6; 
+    font-weight: normal;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+    text-align: center; 
+  }
+  
+  .beneficios-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .beneficio-item {
+    background-color: #e6e6e6;
+    width: 23%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .icono {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c30000;
+  }
+  
+  .beneficio-item h3 {
+    font-size: 14px;
+    margin: 8px 0;
+    font-weight: bold;
+  }
+  
+  .beneficio-item p {
+    font-size: 11px;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  @media (max-width: 992px) {
+    .beneficios-container {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    
+    .beneficio-item {
+      width: 45%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .beneficios-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .beneficio-item {
+      width: 80%;
+      max-width: 200px;
+    }
+  }
+
+  
